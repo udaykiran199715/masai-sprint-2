@@ -8,6 +8,11 @@ var box7 = document.getElementById("box7")
 var box8 = document.getElementById("box8")
 var box9 = document.getElementById("box9")
 
+var Player1 = document.getElementById("player1")
+var Player2 = document.getElementById("player2")
+
+
+
 var count = 1
 
 var count1 = 1
@@ -177,14 +182,15 @@ box7.textContent=='X' && box8.textContent=='X' && box9.textContent=='X' || box1.
 box3.textContent=='X' && box6.textContent=='X' && box9.textContent=='X' || box2.textContent=='X' && box5.textContent=='X' && box8.textContent=='X' ||
 box1.textContent=='X' && box5.textContent=='X' && box9.textContent=='X' ||box3.textContent=='X' && box5.textContent=='X' && box7.textContent=='X' ) {
     
-    out.textContent = "Player1 won"
+    
+    out.textContent = "Congratulations " + Player1.value + " won"
 }
 else if(box1.textContent=='O' && box2.textContent=='O' && box3.textContent=='O' || box4.textContent=='O' && box5.textContent=='O' && box6.textContent=='O' ||
 box7.textContent=='O' && box8.textContent=='O' && box9.textContent=='O' || box1.textContent=='O' && box4.textContent=='O' && box7.textContent=='O' ||
 box3.textContent=='O' && box6.textContent=='O' && box9.textContent=='O' || box2.textContent=='O' && box5.textContent=='O' && box8.textContent=='O' ||
 box1.textContent=='O' && box5.textContent=='O' && box9.textContent=='O' ||box3.textContent=='O' && box5.textContent=='O' && box7.textContent=='O' ) {
     
-    out.textContent = "Player2 won"
+    out.textContent = "Congratulations " + Player2.value + " won"
 }else if(checkCount >=9) {
     out.textContent="DRAW"
 }
