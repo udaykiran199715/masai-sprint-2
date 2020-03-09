@@ -254,7 +254,7 @@ function total() {
 
     var row8 = document.createElement('tr')
     var col8_1 = document.createElement('td')
-    col8_1.textContent = "gst"
+    col8_1.textContent = "GST"
     col8_1.colSpan = 2
 
     var col8_2 = document.createElement('td')
@@ -263,11 +263,11 @@ function total() {
 
     var row9 = document.createElement('tr')
     var col9_1 = document.createElement('td')
-    col9_1.textContent = "DISCOUNT"
+    //col9_1.textContent = "DISCOUNT"
     col9_1.setAttribute('class', 'col')
 
     var col9_2 = document.createElement('td')
-    col9_2.textContent = "10% with No gst"
+    //col9_2.textContent = "10% with No gst"
     col9_2.colSpan = 3
     col9_2.setAttribute('class', 'col')
 
@@ -300,11 +300,14 @@ function total() {
     console.log(discount)
 
     if (sum < 100) {
-        row8.remove()
-        col9
+        row8.remove()   
+        col9_1.remove()
+        col9_2.remove()
         col10_2.textContent = sum
 
     } else if (sum > 100 & sel == 'SELECT') {
+        col9_1.remove()
+        col9_2.remove()
         col10_2.textContent = gst
     } else if (sel == 'WEDNESDAY HUNGAMA' & sum > 100) {
         row8.remove()
@@ -315,12 +318,12 @@ function total() {
     else if (sel == 'FRIDAY FUN' & sum > 100) {
         row8.remove()
         col9_1.textContent = "DISCOUNT"
-        col9_2.textContent = "10% with No gst"
+        col9_2.textContent = "10% with No GST"
         col10_2.textContent = discount
     } else if (sel == 'SUNDAY DHAMAKA' & sum > 100) {
         row8.remove()
         col9_1.textContent = "DISCOUNT"
-        col9_2.textContent = "10% with No gst"
+        col9_2.textContent = "10% with No GST"
         col10_2.textContent = discount
     }
 

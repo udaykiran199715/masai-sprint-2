@@ -31,16 +31,18 @@ box1.addEventListener('click', function () {
     if (count1 == 1) {
         if (count == 1) {
             box1.innerHTML = "X"
-            //console.log(box1)
+            console.log(box1)
             count++
         } else if (count % 2 == 0) {
             box1.innerHTML = "O"
+            console.log(box1)
             count--
         }
         count1++
     }
+    check()
 checkCount++
-check()
+
 
 })
 box2.addEventListener('click', function () {
@@ -52,12 +54,14 @@ box2.addEventListener('click', function () {
             count++
         } else if (count % 2 == 0) {
             box2.innerHTML = "O"
+            console.log(box2)
             count--
         }
         count2++
     }
+    check()
 checkCount++
- check()
+ 
 })
 
 box3.addEventListener('click', function () {
@@ -69,12 +73,14 @@ box3.addEventListener('click', function () {
             count++
         } else if (count % 2 == 0) {
             box3.innerHTML = "O"
+            console.log(box3)
             count--
         }
         count3++
     }
+    check()
 checkCount++
-check()
+
 })
 box4.addEventListener('click', function () {
 
@@ -85,12 +91,14 @@ box4.addEventListener('click', function () {
             count++
         } else if (count % 2 == 0) {
             box4.innerHTML = "O"
+            console.log(box4)
             count--
         }
         count4++
     }
-    checkCount++
     check()
+    checkCount++
+   
 })
 box5.addEventListener('click', function () {
 
@@ -98,79 +106,88 @@ box5.addEventListener('click', function () {
 
         if (count == 1) {
             box5.innerHTML = "X"
-            console.log(box4)
+            console.log(box5)
             count++
         } else if (count % 2 == 0) {
             box5.innerHTML = "O"
+            console.log(box5)
             count--
         }
         count5++
     }
-    checkCount++
     check()
+    checkCount++
+    
 })
 box6.addEventListener('click', function () {
 
     if (count6 == 1) {
         if (count == 1) {
             box6.innerHTML = "X"
-            console.log(box4)
+            console.log(box6)
             count++
         } else if (count % 2 == 0) {
             box6.innerHTML = "O"
+            console.log(box6)
             count--
         }
         count6++
     }
-    checkCount++
     check()
+    checkCount++
+    
 })
 box7.addEventListener('click', function () {
 
     if (count7 == 1) {
         if (count == 1) {
             box7.innerHTML = "X"
-            console.log(box4)
+            console.log(box7)
             count++
         } else if (count % 2 == 0) {
             box7.innerHTML = "O"
-            count++
+            console.log(box7)
+            count--
         }
         count7++
     }
+    check()
 checkCount++
-check()
+
 })
 box8.addEventListener('click', function () {
     if (count8 == 1) {
         if (count == 1) {
             box8.innerHTML = "X"
-            console.log(box4)
+            console.log(box8)
             count++
         } else if (count % 2 == 0) {
             box8.innerHTML = "O"
+            console.log(box8)
             count--
         }
         count8++
     }
+    check()
 checkCount++
-check()
+
 })
 box9.addEventListener('click', function () {
     if (count9 == 1) {
         if (count == 1) {
             box9.innerHTML = "X"
-            console.log(box4)
+            console.log(box9)
             count++
             
         } else if (count % 2 == 0) {
             box9.innerHTML = "O"
+            console.log(box9)
             count--
         }
         count9++
     }
-checkCount++
 check()
+checkCount++
 })
 
 function check() {
