@@ -83,3 +83,12 @@ padding: 15px;
     text-align: center;
     text-decoration: underline burlywood;
 }
+img {
+    width: 100px;
+}
+.thank {
+    color: #ff1744;
+    text-align: center;
+    font-size: 40px;
+
+}
